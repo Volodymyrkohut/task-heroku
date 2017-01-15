@@ -1,4 +1,4 @@
-var	socket = io.connect('http://localhost:5000'); //для чат-db поставив інший порт
+var	socket = io.connect('https://secret-tundra-90660.herokuapp.com'); //для чат-db поставив інший порт
 window.onunload = function(){
 	socket.disconnect();
 }
