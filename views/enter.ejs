@@ -1,0 +1,65 @@
+<% layout("index") %>
+<% block('header',bar)%>
+<% block('main' , 
+		'<li><a href="/profile">Profile</a></li><li><a href="/chat">Chat</a></li>'
+)%>
+
+<div class="profile">
+	<h1>My Account</h1>
+	<p>Привіт - <%- data.login%></p>
+	<p>Ваша країна: <%- data.country%></p>
+	<p>Ваш мейл: <%- data.mail%></p>
+	
+</div>
+<br />
+<div>
+	<a href="/chat"><button id="chatbutton">Chat</button></a>
+</div>
+
+<button id="showSettings">Settings</button>
+
+<div class="settings">
+	<h2>Settings</h2>
+	<p>change your profile</p>
+	<form method="post" action="/change" name="form">
+		<lable for="mail"><p>Change you mail</p></label>
+		<input type="text" name="mail" required placeholder="mail">
+
+		<lable for="login"><p>Change you login</p></label>
+		<input type="text" name="login" required placeholder="login">
+
+		<lable for="password"><p>Change you password</p></label>
+		<input type="password" name="password" required placeholder="password">
+
+		<lable for="country"><p>Change you country</p></label>
+			<select  name="country">
+				<option value="Ukraine">Україна</option>
+				<option value="Russia">Росія</option>
+				<option value="England">Англія</option>
+				<option value="USA">США</option>
+				<option value="Australia">Австралія</option>
+				<option value="France">Франція</option>
+				<option value="Canada">Канада</option>
+				<option value="Sweden">Швеція</option>
+				<option value="Italy">Італія</option>
+				<option value="Spain">Іспанія</option>
+			</select>
+			<input type="submit" name="submit">
+	</form>
+</div>
+
+<script type="text/javascript">
+var settings = document.getElementsByClassName("settings")[0];
+var showSettings = document.getElementById("showSettings");
+
+showSettings.addEventListener("click",function (){
+	if(settings.style.display === "block"){
+		settings.style.display = "none";
+	}else{
+		settings.style.display = "block";
+	}
+	
+})
+
+
+</script>

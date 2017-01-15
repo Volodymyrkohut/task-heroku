@@ -1,0 +1,128 @@
+.header{
+    position:relative;
+    width:auto;
+    height:100px;
+  background:linear-gradient(#ccffff,#00ffff);
+    box-shadow: 0px 0px 0px , 0px 5px 10px gray;
+}
+
+/*Контент*/
+.left{
+    width:200px; 
+}
+.center{
+    height:700px;
+    width:900px;
+    background-color: #ccffff;
+    background-image: url("/img/desk.png");
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-position: 400px 300px;
+    padding: 30px;
+    box-shadow: 0px 0px 0px , 0px 5px 10px grey;
+}
+.right{
+    width:200px;
+}
+
+/*Контент кінець*/
+
+.footer{
+    width:auto;
+    height:100px;
+}
+
+/*MENU*/
+.menu{
+    position:relative;
+    height: 120px;
+    background:linear-gradient(#ccffff,#00cccc);
+    position: absolute;
+    left:400px;
+    border:1px solid white;
+    box-shadow: 0px 0px 0px , 0px 5px 10px grey;
+}
+.menu ul li{ 
+    display: inline;
+    width: 100px;
+}
+.menu ul li a{ 
+   text-decoration: none;
+   color:white;
+   font-family:'Comic Sans MS';
+   font-size:25px;
+   margin-right: 20px;
+   margin-left: 10px;
+}
+.menu ul li :hover {
+    border-radius: 5px;
+    background:linear-gradient(#ccffff,#00ffff);
+    box-shadow: 0px 0px 0px , 0px 5px 10px grey;
+   }
+
+.menu ul {
+    margin-top:30px;
+}
+/*finish menu*/
+
+/*Кнопки для входу і реєстрації*/
+.blockAuth{
+    position:absolute;
+    right:30px;
+}
+.blockAuth ul{
+    list-style-type:none;
+}
+.blockAuth ul li a{
+
+    border-radius: 3px;
+    padding: 5px;
+    font-family:'Comic Sans MS'; 
+    font-size:20px;
+    color:white;
+    text-decoration: none;
+    background:linear-gradient(#ccffff,#00b3b3);
+
+}
+.blockAuth ul li a:hover {
+    background:linear-gradient(#00b3b3,#ccffff);
+   box-shadow: 0px 0px 0px , 0px 5px 10px grey;
+   }
+
+.blockAuth ul li{
+    padding-top: 20px;
+}
+/*кінець*/
+
+
+
+
+
+
+/*page profile*/
+.profile{
+    border:1px solid black;
+    width:300px;
+    padding: 30px;
+}
+
+
+.settings{
+    margin-top:30px;
+    display:none;
+    border:1px solid black;
+    width:300px;
+    padding: 30px;
+}
+
+#showSettings{
+    width:360px;
+    font-size: 24px bold arial;
+
+}
+/*profile page end*/
+#chatbutton{
+    width:360px;
+    font-size: 24px bold arial;
+
+}

@@ -1,0 +1,38 @@
+<% layout("index") %>
+<% block('header', 
+		'<li><a href="/login">Ввійти</a></li><li><a href="/register">Реєстрація</a></li>'
+) %>
+
+
+<form action="/register" method="post" name="form">
+
+	<div>
+		<lable> 
+		<select  name="country">
+			<option value="Ukraine">Україна</option>
+			<option value="Russia">Росія</option>
+			<option value="England">Англія</option>
+			<option value="USA">США</option>
+			<option value="Australia">Австралія</option>
+			<option value="France">Франція</option>
+			<option value="Canada">Канада</option>
+			<option value="Sweden">Швеція</option>
+			<option value="Italy">Італія</option>
+			<option value="Spain">Іспанія</option>
+		</select><br />
+	</lable>
+
+	<label for="mail"><p>email</p></label>
+	<input type="text" name="mail" placeholder="mail" required><br>
+
+	<label for="login"><p>login</p></label>
+	<input type="text" name="login" placeholder="login" required><br>
+
+	<label for="password"><p>password</p></label>
+	<input type="password" name="password" placeholder="password" required><br>
+
+	<br />
+	<input type="submit" name="submit" value="Submit">
+
+</form>
+

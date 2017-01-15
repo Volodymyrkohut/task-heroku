@@ -1,0 +1,54 @@
+<%layout("index")%>
+<% block('header' , 
+		'<li><a href="/logout">Вийти</a></li>'
+)%>
+<% block('main' , 
+		'<li><a href="/profile">Profile</a></li><li><a href="/chat">Chat</a></li>'
+)%>
+
+<div id="content"></div>
+
+
+<div id="bar"></div>
+<form action="" name="form" id="form">
+	<textarea id="text" placeholder="send" required name="text"></textarea>
+	<input type="submit" name="submit" > <!-- onsubmit="return false" -->
+</form>
+
+<script src='/socket.io/socket.io.js'></script>
+  	<script src="/js/chat-client_db.js"></script>
+
+
+
+
+
+<style>
+	#content{
+		background-color: #e6ffff;
+		margin: 20px;
+		width:500px;
+		height:400px;
+		border:1px solid #999;
+		overflow-y: scroll;
+		float:left;
+	}
+	#bar{
+		margin-left:20px; 
+		width: 200px; 
+		height: 400px; 
+		margin: 20px; 
+		border: solid 1px #999;
+		overflow-y: scroll;
+		background-color: #e6ffff;
+	}
+
+
+#text{
+	width: 500px; 
+	height: 100px;
+	margin: 20px;
+	background-color: #e6ffff;
+}
+
+
+</style>

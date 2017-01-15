@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="css/index.css" rel="stylesheet" type="text/css" />
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+		<title><%= title%></title>
+</head>
+<body>
+<header class="header">
+<!--Для регістрації та входу-->
+	<div class="menu">
+		<ul>
+			<li><a href="/">Main</a></li>
+			<li><a href="/#">About</a></li>
+			<%- blocks.main %>
+		</ul>
+	</div>
+	<div class="blockAuth" class="blockAuthPosition">
+		<ul >
+			<%- blocks.header %>
+		</ul>
+		
+
+	<div>
+</header>
+
+
+<content class="contentMain">
+
+<table>
+  <tr>
+    <td class="left"></td>
+    <td class="center">
+    	<%-body %>
+    	
+    </td>
+    <td class="right">
+    	
+    </td>
+  </tr>
+</table>
+
+
+</content>
+ 
+
+ <footer class="footer">
+ </footer>     
+</body>
+</html>
